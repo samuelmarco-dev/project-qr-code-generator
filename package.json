@@ -1,0 +1,32 @@
+{
+    "name": "project-qr-code-generator",
+    "version": "1.0.0",
+    "description": "QR Code Generator for e-Commerce",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "fix": "prettier . --write && eslint --fix .",
+        "start:dev": "node --watch src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/samuelmarco-dev/project-qr-code-generator.git"
+    },
+    "author": "Samuel Marco",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/samuelmarco-dev/project-qr-code-generator/issues"
+    },
+    "homepage": "https://github.com/samuelmarco-dev/project-qr-code-generator#readme",
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-n": "^16.6.2",
+        "eslint-plugin-promise": "^6.4.0",
+        "husky": "^9.0.11",
+        "prettier": "^3.3.2"
+    }
+}
