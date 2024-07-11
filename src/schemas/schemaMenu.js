@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 
-// Prompt schema for the main menu
-const schemaPrompt = {
+// Prompt menu schema for the main menu
+const schemaMenu = {
     name: 'select',
     description: chalk.yellow.bold(
         'Choose one of the options below\n1. Generate QRCode or 2. Generate Password\nYour choise'
@@ -11,4 +11,4 @@ const schemaPrompt = {
     required: true,
 };
 
-export default schemaPrompt;
+export default schemaMenu;
