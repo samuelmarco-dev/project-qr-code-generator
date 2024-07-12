@@ -28,11 +28,15 @@ const create = async () => {
 };
 
 const generate = async ({ uppercase, lowercase, numbers, special, length }) => {
-    if(length < 3 || length > 20) {
-        console.log(chalk.red.italic('The password length must be between 3 and 20 characters\n'));
+    if (length < 3 || length > 20) {
+        console.log(
+            chalk.red.italic(
+                'The password length must be between 3 and 20 characters\n'
+            )
+        );
         process.exit();
     }
-    
+
     const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
     const numbersCharacters = '0123456789';

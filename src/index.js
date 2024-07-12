@@ -2,6 +2,7 @@ import prompt from 'prompt';
 import chalk from 'chalk';
 import schemaMenu from './schemas/schemaMenu.js';
 import { qrCode } from './services/qrCode.js';
+import { password } from './services/password.js';
 
 (async function main() {
     prompt.get([schemaMenu], async (err, result) => {
@@ -13,6 +14,7 @@ import { qrCode } from './services/qrCode.js';
         }
         if (parseInt(result.select) === 2) {
             console.log(chalk.bgBlue('\nOption select: Password'));
+            await password.create();
         }
     });
 
